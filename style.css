@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #05595B;
+    text-decoration: none;
+}
+
+header {
+    background-color: white;
+}
+
+header .header {
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #062C30;
+    border-bottom: 3px solid #062C30;
+}
+
+header .header .logo {
+    width: 120px;
+}
+
+header .header .logo img {
+    width: 100%;
+}
+
+header .header .menu ul {
+    display: flex;
+    list-style: none;
+}
+
+header .header .menu ul li a {
+    border-right: solid black;
+    padding-right: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    text-align: center;
+
+}
+
+header .header-banner {
+    animation-name: example;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    height: 90vh;
+    background-position: center;
+    background-size: 100%;
+    background-color: #cccccc;
+    background-image: url("./images/banner.jpeg");
+
+}
+
+header .header-banner .banner-title {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+
+header .header-banner .banner-title h3 {
+    font-size: 30px;
+}
+
+header .header-banner .banner-title p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.footer .social a {
+    color: #062C30;
+}
+
+.footer p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@keyframes example {
+    20% {
+        background-image: url("./images/banner.jpeg");
+    }
+
+    40% {
+        background-image: url("./images/e.jpeg");
+    }
+
+    60% {
+        background-image: url("./images/b.jpeg");
+    }
+
+    80% {
+        background-image: url("./images/c.jpeg");
+    }
+
+    100% {
+        background-image: url("./images/d.jpeg");
+    }
+
+}
+
+
+
+#diltr {
+    background-image: url(./images/hd-turk-bayragi-png-2.png);
+    width: 50px;
+    height: 30px;
+    margin-left: 20px;
+    background-position: center;
+    background-size: 100%;
+    border: white;
+    cursor: pointer;
+
+}
+
+#dilen {
+    background-image: url(./images/amerika.png);
+    width: 50px;
+    height: 30px;
+    margin-left: 20px;
+    background-position: center;
+    background-size: 100%;
+    border: white;
+    cursor: pointer;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grande Otel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    a {
+        color: #062C30;
+        text-decoration: none;
+    }
+
+    header .header {
+        padding: 0px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #062C30;
+        border-bottom: 3px solid #062C30;
+    }
+
+    header .header .logo {
+        width: 120px;
+    }
+
+    header .header .logo img {
+        width: 100%;
+    }
+
+    header .header .menu ul {
+        display: flex;
+        list-style: none;
+    }
+
+    header .header .menu ul li a {
+        border-right: solid black;
+        padding-right: 10px;
+        font-size: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    header .header-banner {
+        height: 90vh;
+        background-position: center;
+        background-size: 100%;
+        background-color: #cccccc;
+        background-image: url("./images/banner.jpeg");
+    }
+
+    header .header-banner .banner-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        color: white;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    header .header-banner .banner-title h3 {
+        font-size: 30px;
+    }
+
+    header .header-banner .banner-title p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .alt {
+        text-align: center;
+        padding: 50px 0px;
+    }
+
+    .alt .sosyal a {
+        color: #062C30;
+    }
+
+    .alt p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .rezarvasyon {
+        background-color: #062C30;
+        width: 100%;
+        height: 65vh;
+
+    }
+
+    #zaman {
+        width: 140px;
+        height: 70px;
+        margin-right: 50px;
+        display: flex;
+    }
+
+    #buton {
+        width: 140px;
+        height: 70px;
+        margin-right: 50px;
+    }
+
+    #diltr {
+        background-image: url(./images/hd-turk-bayragi-png-2.png);
+        width: 50px;
+        height: 30px;
+        margin-left: 20px;
+        background-position: center;
+        background-size: 100%;
+        border: white;
+    }
+
+    #dilen {
+        background-image: url(./images/amerika.png);
+        width: 50px;
+        height: 30px;
+        margin-left: 20px;
+        background-position: center;
+        background-size: 100%;
+        border: white;
+        cursor: pointer;
+    }
+</style>
+
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="./images/logo.jpeg" alt="">
+            </div>
+            <div class="srch">
+                <form action="" id="arama kutusu" method="post">
+                    <input type="text" name="arama" placeholder="Search on google" />
+                    <input type="button" name="gonder" value="Search" />
+                </form>
+            </div>
+            <div class="menu">
+
+                <ul>
+                    <li> <a href="file:///C:/Users/ASUS-PC/Desktop/Yeni%20klas%C3%B6r%20(2)/odev/index.html">Home
+                            Page</a></li>
+
+                    <li> <a
+                            href="file:///C:/Users/ASUS-PC/Desktop/Yeni%20klas%C3%B6r%20(2)/odev/rezarvasyon.html">Reservation</a>
+                    </li>
+                    <li> <a
+                            href="file:///C:/Users/ASUS-PC/Desktop/Yeni%20klas%C3%B6r%20(2)/odev/hakk%C4%B1nda.html">About</a>
+                    </li>
+
+                    <li> <a href="file:///C:/Users/ASUS-PC/Desktop/Yeni%20klas%C3%B6r%20(2)/odev/odalar.html">Rooms</a>
+                    </li>
+
+                    <li> <a href="file:///C:/Users/ASUS-PC/Desktop/Yeni%20klas%C3%B6r%20(2)/odev/hizmet.html">Our
+                            Services</a></li>
+                    <li> <a
+                            href="file:///C:/Users/ASUS-PC/Desktop/Yeni%20klas%C3%B6r%20(2)/odev/ileti%C5%9Fim.html">Contact</a>
+                    </li>
+                    <li> <a
+                        href="file:///C:/Users/ASUS-PC/Desktop/Yeni%20klas%C3%B6r%20(2)/odev/galeri.html">Gallery</a>
+                </li>
+
+                </ul>
+
+            </div>
+            <div><a href=""><input type="button" id="diltr" value=""></a>
+
+                <a href=""><input type="button" id="dilen" value=""></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="rezarvasyon">
+
+
+        <input type="datetime-local" name="zaman" id="zaman">
+        <input type="button" value="Oda ara" id="buton">
+
+
+
+
+
+    </div>
+
+    <div class="alt">
+        <div class="sosyal">
+            <a href="https://m.facebook.com/100064088649414/"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.youtube.com/watch?v=4DKm7ORpbSE"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://www.instagram.com/elementgardenistanbul/"><i class="fab fa-instagram fa-2x"></i>
+        </div>
+        <p>
+            Copyright &copy; Garden Otel
+        </p>
+    </div>
+
+</body>
+
+</html>
